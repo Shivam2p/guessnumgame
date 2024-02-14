@@ -47,5 +47,6 @@ agn.addEventListener('click', function(){
   secretNumber=Math.trunc(Math.random()*20)+1;
   displayMessage("start guessing");
   document.querySelector("body").style.backgroundColor='#273239'
+     document.querySelector(".number").textContent='?';
 
 })
