@@ -24,7 +24,7 @@ document.querySelector('.check').addEventListener('click',function(){
         document.querySelector('body').style.backgroundColor='#ec4e20'
 
         if(score>highscore){
-            score=highscore;
+            highscore=score;
             document.querySelector(".highscore").textContent=highscore;
         }
     }
