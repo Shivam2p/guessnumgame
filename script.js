@@ -22,6 +22,11 @@ document.querySelector('.check').addEventListener('click',function(){
         displayMessage("you won 🏆")
         document.querySelector(".number").textContent=secretNumber;
         document.querySelector('body').style.backgroundColor='#ec4e20'
+
+        if(score>highscore){
+            score=highscore;
+            document.querySelector(".highscore").textContent=highscore;
+        }
     }
     else if (guess !== secretNumber) {
         if (score > 1) {
